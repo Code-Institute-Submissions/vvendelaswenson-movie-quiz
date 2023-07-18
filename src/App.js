@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const quizData = [
+const data = [
   {
     question: 'Which movie won the Academy Award for Best Picture in 2020?',
     options: ['Parasite', 'Joker', '1917', 'Once Upon a Time in Hollywood'],
@@ -73,7 +73,7 @@ function App() {
   const [selectedOption, setSelectedOption] = useState(null)
 
   const handleAnswerOptionClick = (answer) => {
-    if (answer === quizData[currentQuestion].answer) {
+    if (answer === data[currentQuestion].answer) {
       setScore(score + 1)
       setSelectedOption(answer)
     } else {
@@ -81,7 +81,7 @@ function App() {
     }
 
     const nextQuestion = currentQuestion + 1
-    if (nextQuestion < quizData.length) {
+    if (nextQuestion < data.length) {
       setTimeout(() => {
         setCurrentQuestion(nextQuestion)
         setSelectedOption(null)
@@ -95,17 +95,17 @@ function App() {
     <div className="container">
       {showScore ? (
         <div className="score-section">
-          You scored {score} out of {quizData.length}
+          You scored {score} out of {data.length}
         </div>
       ) : (
         <>
           <div className="question-section">
             <div id="question-count">
-              Question {currentQuestion + 1}/{quizData.length}
+              Question {currentQuestion + 1}/{data.length}
             </div>
-            <div id="question-text">{quizData[currentQuestion].question}</div>
+            <div id="question-text">{data[currentQuestion].question}</div>
             <img
-              src={`/images/${quizData[currentQuestion].image}`}
+              src={`/images/${data[currentQuestion].image}`}
               alt="Question"
               className="question-image"
               height={400}
@@ -113,10 +113,10 @@ function App() {
             />
           </div>
           <div className="answer-section">
-            {quizData[currentQuestion].options.map((option, index) => {
+            {data[currentQuestion].options.map((option, index) => {
               let btnClass = 'answer-btn'
               if (selectedOption !== null) {
-                if (option === quizData[currentQuestion].answer) {
+                if (option === data[currentQuestion].answer) {
                   btnClass += ' correct'
                 } else if (option === selectedOption) {
                   btnClass += ' incorrect'
