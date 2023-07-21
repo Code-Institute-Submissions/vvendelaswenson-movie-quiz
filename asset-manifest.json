@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/movie-quiz/static/css/main.d613d399.css",
+    "main.js": "/movie-quiz/static/js/main.e070bb22.js",
+    "index.html": "/movie-quiz/index.html",
+    "main.d613d399.css.map": "/movie-quiz/static/css/main.d613d399.css.map",
+    "main.e070bb22.js.map": "/movie-quiz/static/js/main.e070bb22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d613d399.css",
+    "static/js/main.e070bb22.js"
+  ]
+}

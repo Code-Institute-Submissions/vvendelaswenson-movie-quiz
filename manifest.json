@@ -1,0 +1,6 @@
+{
+  "name": "quiz",
+  "short_name": "quiz",
+  "description": "Test your knowledge of movies with this interactive quiz application.",
+  "start_url": "/"
+}
