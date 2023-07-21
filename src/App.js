@@ -105,7 +105,7 @@ function App() {
             </div>
             <div id="question-text">{data[currentQuestion].question}</div>
             <img
-              src={`/images/${data[currentQuestion].image}`}
+              src={`${process.env.PUBLIC_URL}/images/${data[currentQuestion].image}`}
               alt="Question"
               className="question-image"
               height={400}
