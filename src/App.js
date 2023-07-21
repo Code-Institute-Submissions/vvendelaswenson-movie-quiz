@@ -85,7 +85,7 @@ function App() {
       setTimeout(() => {
         setCurrentQuestion(nextQuestion)
         setSelectedOption(null)
-      }, 1000) // Delay transitioning to the next question
+      }, 1000)
     } else {
       setShowScore(true)
     }

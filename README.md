@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Movie Quiz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Movie Quiz! Test your knowledge of movies with this interactive quiz application. This project is built using React and allows users to answer multiple-choice questions about movies. It provides immediate feedback on the correctness of the answers and displays the final score at the end of the quiz.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Multiple-choice questions about movies
+- Dynamically loaded questions and options from the `data` array
+- Immediate feedback on correct and incorrect answers
+- Score tracking throughout the quiz
+- Display of the final score at the end of the quiz
+- Support for adding images to each question
+- Visual indication of correct and incorrect answers
+- Responsive design for optimal viewing on different devices
 
-### `npm start`
+## How to Run the Application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using the terminal or command prompt.
+3. Run `npm install` to install the project dependencies.
+4. Run `npm start` to start the development server.
+5. Open your web browser and visit `http://localhost:3000` to view the Movie Quiz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Customizing the Quiz
 
-### `npm test`
+- To add more questions to the quiz, update the `quizData` array in the `App.js` file. Each question should have a `question` string, an `options` array, an `answer` string, and an optional `image` string for the associated image file name.
+- You can place the corresponding images in the `public/images` folder of the project.
+- Modify the CSS styles in the `styles.css` file to customize the appearance of the quiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Testing
 
-### `npm run build`
+I tested that thos page works in different browsers (Chrome, Firefox, Safari)
+I tested the project in different devices (Mobile + desktop)
+I tested that the navigation to different section works perfectly
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bugs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I had a problem getting my css wo work
+I realised i had linked it as "styles.css" and my file is called "style.css"
+By changing it to style it worked
+Validator Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HTML - No errors returned when passing through the official W3C validator
 
-### `npm run eject`
+CSS - No errors were found when passing through the official (jigsaw) validator
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Javascript - No errors were found when passing through JSHint JavaScript Validator
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Accessibility - I confirmed that the colors and fonts that are chosen are easy to read and accessible ny running it through lighthouse in devtools
