@@ -1,0 +1,11 @@
+{
+    "name": "Movie Quiz",
+    "short_name": "Movie Quiz",
+    "description": "Test your knowledge of movies with this interactive quiz application.",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2196f3",
+    "background_color": "#f5f5f5"
+    
+  }
+  
